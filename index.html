@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/farmework.css">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Dashboard</title>
+</head>
+<body>
+  <div class="page d-flex">
+    <nav class="sidebar close">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="img/logo-s.jpeg" alt="">
+          </span>
+          <div class="text header-text">
+            <span class="name">Ravox</span>
+            <span class="prof">Front-End</span>
+          </div>
+        </div>
+        <i class="uil uil-angle-right-b toggle"></i>
+      </header>
+      <div class="menu-bar">
+        <div class="menu">
+          <li style="height: 36px; border-radius: 3px;" class="search-box d-flex">
+            <i style="min-width: 56px;" class="uil uil-search icon"></i>
+            <input style="height: 34px;" type="text" placeholder="Search...">
+          </li>
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a class="active actives d-flex align-center fs-14 c-black rad-6 p-10" href="index1.html">
+                <i class="uil uil-window icon"></i>
+                <span class="text nav-text">المواقع</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="actives d-flex align-center fs-14 c-black rad-6 p-10" href="setting.html">
+                <i class="uil uil-arrow-growth icon"></i>
+                <span class="text nav-text">المسارات التعليمية</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="profile.html">
+                <i class="uil uil-notebooks icon"></i>
+                <span class="text nav-text">الكتب</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="projects.html">
+                <i class="uil uil-file-info-alt icon"></i>
+                <span class="text nav-text">المقالات</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="Courses.html">
+                <i class="uil uil-text-fields icon"></i>
+                <span class="text nav-text">النصائح</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="friends.html">
+                <i class="uil uil-keyboard icon"></i>
+                <span class="text nav-text">الاضافات</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="files.html">
+                <i class="uil uil-comment-search icon"></i>
+                <span class="text nav-text">الأسئلة & الأجوبة</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="button-content">
+          <li class="">
+            <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="files.html">
+              <i class="uil uil-signout icon"></i>
+              <span class="text nav-text">تسجيل الخروج</span>
+            </a>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <div class="content w-full">
+      <!-- Start Head -->
+      <div class="head bg-white p-15 between-flex">
+        <!-- Start Drop Menu -->
+        
+          <!-- <i class="uil uil-user"></i> -->
+          <!-- <i class="uil uil-setting"></i> -->
+          <!-- <i class="uil uil-envelope-question"></i> -->
+          <!-- <i class="uil uil-signout"></i> -->
+        <!-- End Drop Menu -->
+        <div class="search p-relative">
+          <input class="p-10 rad-10" type="search" placeholder="Type A Keyword">
+        </div>
+        <div class="icons d-flex align-center">
+          <span class="notification p-relative">
+            <img class="img-2" src="img/logo-s.jpeg" alt="" onclick="toggleMenu()">
+          </span>
+        </div>
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img class="img-p" src="img/logo-s.jpeg" alt="">
+              <h2>Ahmed Sallam</h2>
+            </div>
+            <hr>
+            <a class="sub-menu-link ff" href="#profile">
+              <i class="uil uil-user"></i>
+              <p>Profile</p>
+              <span>></span>
+            </a>
+            <a class="sub-menu-link ff" href="#settings">
+              <i class="uil uil-setting"></i>
+              <p>Settings</p>
+              <span>></span>
+            </a>
+            <a class="sub-menu-link ff" href="#settings">
+              <i class="uil uil-envelope-question"></i>
+              <p>Feedback</p>
+              <span>></span>
+            </a>
+            <a class="sub-menu-link ff" href="#settings">
+              <i class="uil uil-signout"></i>
+              <p>Log Out</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- End Head -->
+      <h1 class="p-relative my-stl">المواقع</h1>
+      <div class="wrapper d-grid gap-20">
+        <!-- Start Box One -->
+        <div class="wb-1 p-relative bg-white p-10 rad-10">
+          <div class="circle">1</div>
+          <img src="img/wv.png" class="wb-1-img" alt="">
+          <div class="text">
+            <p>من المواقع التي ستعطي شكل جذاب لموقعك يمكنك عمل به</p>
+            <p><span class="mspn-f">موجات رائعة</span> وأشياء أخري قم باستكشافها شاهد الشكل</p>
+            <p class="mt-0">ستحتاجه  باذن الله</p>
+          </div>
+          <div>
+          <a href="https://getwaves.io/" target="_blank" class="btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+          </div>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10">
+          <div class="circle">2</div>
+          <!-- <img src="img/" class="wb-1-img" alt=""> -->
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg class="blob-2 mt-5" width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+              <title>Artboard 8 Copy 3</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Artboard-8-Copy-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <path d="M13.9801902,49.6711813 C6.53263814,35.8004802 25.1318158,6.03761162 41.8789568,5.02687836 C58.6260977,4.01614511 73.5212019,31.7575472 64.221613,46.6389815 C54.9220242,61.5204158 21.4277423,63.5418823 13.9801902,49.6711813 Z" id="Shape-Copy-6" fill="#FF9933" fill-rule="nonzero"></path>
+                  <path d="M40.1791582,35.6374051 C45.8118959,42.142798 54.7409376,46.5773128 55.6818939,51.8886777 C56.6228502,57.2000425 49.5757211,63.3882574 42.3092387,65.4951277 C35.0427564,67.6019979 27.5569207,66.6275236 21.2911757,63.196491 C15.0254307,59.7654584 9.97977636,53.8778674 7.18987356,46.9576204 C4.39997076,40.0373733 3.86581953,31.0844701 8.02239145,24.9160023 C12.1789634,18.7475346 21.0262584,15.3635023 26.6181227,17.9596217 C32.209987,20.5557411 34.5464206,29.1320122 40.1791582,35.6374051" id="Shape-Copy-5" fill="#FF0066" fill-rule="nonzero"></path>
+                  <path d="M52.6824402,43.992 C52.6824402,51.384 46.2504402,54.6 39.2904402,54.6 L22.7784402,54.6 L22.7784402,17.016 L39.0504402,17.016 C42.6024402,17.016 46.2504402,18.168 48.5544402,20.52 C50.1384402,22.152 51.0504402,24.504 51.0504402,26.952 C51.0504402,30.744 48.6504402,33.528 45.0504402,35.016 L45.0504402,35.16 C49.8504402,35.928 52.6824402,39.48 52.6824402,43.992 Z M41.6424402,28.488 C41.6424402,26.184 39.9624402,25.128 37.3224402,25.128 L31.9464402,25.128 L31.9464402,31.896 L37.4184402,31.896 C40.1544402,31.896 41.6424402,30.6 41.6424402,28.488 Z M43.2264402,42.888 C43.2264402,40.488 41.2104402,39.384 38.9064402,39.384 L31.9464402,39.384 L31.9464402,46.44 L38.9544402,46.44 C41.3544402,46.44 43.2264402,45.288 43.2264402,42.888 Z" id="B-Copy" fill="#FFFFFF"></path>
+              </g>
+          </svg>
+          <div class="text">
+            <p>من المواقع التي ستعطي شكل جذاب لموقعك يمكنك عمل به</p>
+            <p><span class="mspn-f">اشكال دائرية مختلفة</span> استخدمها في تصميمك وموقعك  </p>
+            <p class="mt-0">ستحتاجه   باذن الله</p>
+            
+          </div>
+          <a href="https://www.blobmaker.app/" target="_blank" class="btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10">
+          <div class="circle">3</div>
+          <img src="img/brand.png" class="wb-1-img wb-3" alt="">
+          <div class="text">
+            <p>هذا الموقع مفيد من حيث الألوان حيث يعطيك ألوان الشركات</p>
+            <p style="margin-top: 30px;"><span class="mspn">Facebook | Instagram | Twitter</span> المشهورة مثل</p>
+            <p class="mt-0">ستحتاجه   باذن الله</p>
+          </div>
+          <a href="https://brandcolors.net/" target="_blank" class="btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10">
+          <div class="circle">4</div>
+          <img src="img/mdn.png" class="wb-1-img wb-3 wb-4" alt="">
+          <div class="text">
+            <p>هذا الموقع غني بالمعلومات في مختلف لغاب البرمجة ويمكنك</p>
+            <p>الاعتماد عليه كمصدر قوي للتعلم اذا كنت <span class="mspn-f">محترف او مبتدئ</span> مثل</p>
+            <p class="mt-0"><span class="mspn">HTML | CSS  | JS | PhP | Python | SQL | C++</span></p>
+          </div>
+          <a href="https://developer.mozilla.org/en-US/" target="_blank" class="btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10">
+          <div class="circle">5</div>
+          <img src="img/w3.png" class="wb-1-img wb-3 wb-4" alt="">
+          <div class="text">
+            <p>هذا الموقع غني بالمعلومات في مختلف لغاب البرمجة ويمكنك</p>
+            <p>الاعتماد عليه كمصدر قوي للتعلم اذا كنت <span class="mspn-f">مبتدئ</span> مثل</p>
+            <p class="mt-0"><span class="mspn">HTML | CSS  | JS | PhP | Python | SQL | C++</span></p>
+          </div>
+          <a href="https://www.w3schools.com/" target="_blank" class="btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10">
+          <div class="circle">6</div>
+          <img src="img/zero.png" class="wb-1-img wb-3 wb-4 wb-5" alt="">
+          <div class="text">
+            <p>موقع المبرمج العملاق أسامة الزيرو واحدة من أكبر المنصات</p>
+            <p>ستساعدك في تعلم البرمجة <span class="mspn-f">خصوصا مجال الويب</span> أغلب ما </p>
+            <p class="mt-0">ستحتاجه ستجده هناك باذن الله</p>
+          </div>
+          <a href="https://elzero.org/" target="_blank" class="btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10">
+          <div class="circle">7</div>
+          <img src="img/gf.png" class="wb-1-img wb-3 wb-4 wb-5 wb-6" alt="">
+          <div class="text">
+            <p>هذا الموقع مقدم من شركة جوجل يمكنك من خلاله تحميل</p>
+            <p>منه الخطوط <span class="mspn-f">الإنجليزية</span> لموقعك وتصميمك</p>
+            <p class="mt-0">ستحتاجه باذن الله</p>
+          </div>
+          <a href="https://fonts.google.com/knowledge" target="_blank" class="btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10">
+          <div class="circle">8</div>
+          <img src="img/logo.svg" class="wb-1-img wb-3 wb-4 wb-5 wb-6" alt="">
+          <div class="text">
+            <p>هذا الموقع مقدم من شركة الفونت يمكنك من خلاله تحميل</p>
+            <p> الخطوط <span class="mspn-f">العربية</span> لموقعك وتصميمك</p>
+            <p class="mt-0">ستحتاجه باذن الله</p>
+          </div>
+          <a href="https://alfont.com/" target="_blank" class="btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10">
+          <div class="circle">9</div>
+          <img src="img/fb.png" class="wb-1-img wb-3 wb-4 wb-5 wb-6" alt="">
+          <div class="text">
+            <p>هذا الموقع كنز للمبرمجين والمصممين يحتوي علي صور كرتونية</p>
+            <p><span class="mspn-f">خطوط موك اب فيكتور رسومات وأشياء كثيرة</span></p>
+            <p class="mt-0">سيوفر عليك الكثير من الوقت</p>
+          </div>
+          <a href="https://www.freepik.com/" target="_blank" class="btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10">
+          <div class="circle">10</div>
+          <img src="img/ff.png" class="wb-1-img wb-3 wb-4 wb-5 wb-6" alt="">
+          <div class="text">
+            <p>هذا الموقع كنز للمبرمجين يحتوي علي العديد من التأثيرات </p>
+            <p><span class="mspn-f">التي يمكنك عملها في موقعك بال <span class="mspn">CSS | JS</span></span></p>
+            <p class="mt-0">سيوفر عليك الكثير من الوقت</p>
+          </div>
+          <a href="https://freefrontend.com/" target="_blank" class="btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10">
+          <div class="circle">11</div>
+          <img src="img/on.svg" class="wb-1-img wb-3 wb-4 wb-5 wb-6" alt="">
+          <div class="text">
+            <p>هذا الموقع سيفيدك اذا كنت تريد تغيير صيغ الملفات   </p>
+            <p><span class="mspn-f">مثل الفيديوهات | الصور | الصوتيات | الملفات</span></p>
+            <p class="mt-0">سيوفر عليك الكثير من الوقت</p>
+          </div>
+          <a href="https://www.online-convert.com/" target="_blank" class="btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10">
+          <div class="circle">12</div>
+          <img src="img/cb.jpg" class="wb-1-img wb-3 wb-4 wb-5 wb-6 wb-7" alt="">
+          <div class="text">
+            <p>هذا الموقع سيفيدك اذا كنت تريد الحصول علي قوالب الوان </p>
+            <p><span class="mspn-f">متناسقة مع بعضها لموقعك او تصميمك</span></p>
+            <p class="mt-0">سيوفر عليك الكثير من الوقت</p>
+          </div>
+          <a href="https://colorhunt.co/" target="_blank" class="btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10">
+          <div class="circle">13</div>
+          <img src="img/bh.png" class="wb-1-img wb-3 wb-4 wb-5 wb-6 wb-7" alt="">
+          <div class="text">
+            <p>هذا الموقع سيفيدك اذا كنت تريد عمل تغذية بصرية يوجد عليه </p>
+            <p><span class="mspn-f">الكثير من التصماميم والأفكار الرائعة</span></p>
+            <p class="mt-0">ستحتاجه باذن الله</p>
+          </div>
+          <a href="https://www.behance.net/" target="_blank" class="btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10">
+          <div class="circle">14</div>
+          <img src="img/lfA.png" class="wb-1-img wb-3 wb-4 wb-5 wb-6 wb-7 wb-8" alt="">
+          <div class="text">
+            <p>هذا الموقع سيفيدك اذا كنت تريد عمل انيميشن جذاب في موقعك    </p>
+            <p><span class="mspn-f">يوجد عليه الكثير الأفكار الرائعة</span></p>
+            <p class="mt-0">ستحتاجه باذن الله</p>
+          </div>
+          <a href="https://lottiefiles.com/" target="_blank" class="btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10">
+          <div class="circle">15</div>
+          <img src="img/om.svg" class="wb-1-img wb-3 wb-4 wb-5 wb-6 wb-7 wb-8" alt="">
+          <div class="text">
+            <p>هذا الموقع توجد به مميزات لا تعد ولا تحصي لذلك قم</p>
+            <p><span class="mspn-f">قم باستكشافه بنفسك</span></p>
+            <p class="mt-0">ستحتاجه باذن الله</p>
+          </div>
+          <a href="https://www.behance.net/" target="_blank" class="btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10">
+          <div class="circle">16</div>
+          <img src="img/ed.png" class="wb-1-img wb-3 wb-4 wb-5 wb-6 wb-7 wb-8" alt="">
+          <div class="text">
+            <p><span class="mspn-f">(مبتدئ)</span> هذا الموقع يوجد به العديد من المسائل في مختلف اللغات</p>
+            <p><span class="mspn-f">لتطوير مهارة ال <span class="mspn">Problem Solving</span></span></p>
+            <p class="mt-0">ستحتاجه باذن الله</p>
+          </div>
+          <a href="https://edabit.com/challenges" target="_blank" class="btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10">
+          <div class="circle">17</div>
+          <img src="img/cs.svg" class="wb-1-img wb-3 wb-4 wb-5 wb-6 wb-7 wb-8 wb-9" alt="">
+          <div class="text">
+            <p><span class="mspn-f">(متوسط)</span> هذا الموقع يوجد به العديد من المسائل في مختلف اللغات</p>
+            <p><span class="mspn-f">لتطوير مهارة ال <span class="mspn">Problem Solving</span></span></p>
+            <p class="mt-0">ستحتاجه باذن الله</p>
+          </div>
+          <a href="https://www.codewars.com/" target="_blank" class="btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10">
+          <div class="circle">18</div>
+          <img src="img/LeetCode_logo_rvs.png" class="wb-1-img wb-3 wb-4 wb-5 wb-6 wb-7 wb-8 wb-9 wb-10" alt="">
+          <div class="text">
+            <p><span class="mspn-f">(محترف)</span> هذا الموقع يوجد به العديد من المسائل في مختلف اللغات</p>
+            <p><span class="mspn-f">لتطوير مهارة ال <span class="mspn">Problem Solving</span></span></p>
+            <p class="mt-0">ستحتاجه باذن الله</p>
+          </div>
+          <a href="https://leetcode.com/" target="_blank" class="btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+      </div>
+  </div>
+  <span class="to-up">UP</span>
+  <script src="js/app.js"></script>
+</body>
+</html>
