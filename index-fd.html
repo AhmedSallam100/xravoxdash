@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/farmework.css">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Dashboard</title>
+</head>
+<body>
+  <div class="page d-flex">
+    <nav class="sidebar close">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="img/logo-s.jpeg" alt="">
+          </span>
+          <div class="text header-text">
+            <span class="name">Ravox</span>
+            <span class="prof">Front-End</span>
+          </div>
+        </div>
+        <i class="uil uil-angle-right-b toggle"></i>
+      </header>
+      <div class="menu-bar">
+        <div class="menu">
+          <li style="height: 36px; border-radius: 3px;" class="search-box d-flex">
+            <i style="min-width: 56px;" class="uil uil-search icon"></i>
+            <input style="height: 34px;" type="text" placeholder="Search...">
+          </li>
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                <i class="uil uil-window icon"></i>
+                <span class="text nav-text">المواقع</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="setting.html">
+                <i class="uil uil-arrow-growth icon"></i>
+                <span class="text nav-text">المسارات التعليمية</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="profile.html">
+                <i class="uil uil-notebooks icon"></i>
+                <span class="text nav-text">الكتب</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="projects.html">
+                <i class="uil uil-file-info-alt icon"></i>
+                <span class="text nav-text">المقالات</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="Courses.html">
+                <i class="uil uil-text-fields icon"></i>
+                <span class="text nav-text">النصائح</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="friends.html">
+                <i class="uil uil-keyboard icon"></i>
+                <span class="text nav-text">الاضافات</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="files.html">
+                <i class="uil uil-comment-search icon"></i>
+                <span class="text nav-text">الأسئلة & الأجوبة</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="button-content">
+          <li class="">
+            <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="files.html">
+              <i class="uil uil-signout icon"></i>
+              <span class="text nav-text">تسجيل الخروج</span>
+            </a>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <div class="content w-full">
+      <!-- Start Head -->
+      <div class="head bg-white p-15 between-flex">
+        
+        <div class="search p-relative">
+          <input class="p-10 rad-10" type="search" placeholder="Type A Keyword">
+        </div>
+        <div class="icons d-flex align-center">
+          <span class="notification p-relative">
+            <img class="img-2" src="img/logo-s.jpeg" alt="" onclick="toggleMenu()">
+          </span>
+        </div>
+        <!-- Start Drop Menu -->
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img class="img-p" src="img/logo-s.jpeg" alt="">
+              <h2>Ahmed Sallam</h2>
+            </div>
+            <hr>
+            <a class="sub-menu-link ff" href="#profile">
+              <i class="uil uil-user"></i>
+              <p>Profile</p>
+              <span>></span>
+            </a>
+            <a class="sub-menu-link ff" href="#settings">
+              <i class="uil uil-setting"></i>
+              <p>Settings</p>
+              <span>></span>
+            </a>
+            <a class="sub-menu-link ff" href="#settings">
+              <i class="uil uil-envelope-question"></i>
+              <p>Feedback</p>
+              <span>></span>
+            </a>
+            <a class="sub-menu-link ff" href="#settings">
+              <i class="uil uil-signout"></i>
+              <p>Log Out</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- End Head -->
+      <h1 class="p-relative my-stl-2">المسارات التعليمية</h1>
+      <div class="wrapper d-grid gap-20">
+        <div class="wb-1 p-relative bg-white p-10 rad-10 rad-m">
+          <div class="circle">1</div>
+          <img class="path-img" src="img/html.png" alt="">
+          <div class="text txt-path">
+            <p>أولا تعلم لغة <span class="mspn">HTML</span> لبناء هيكل الموقع الخاص بك</p>
+            <p style="margin-top: 30px;"><span class="mspn-f">من روابط وصور ونصوص بدون تنسيقات</span> </p>
+            <p class="mt-0">رابط الدورة</p>
+          </div>
+          <a href="https://www.youtube.com/watch?v=6QAELgirvjs&list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji" target="_blank" class=" btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10 rad-m">
+          <div class="circle">2</div>
+          <img class="path-img" src="img/css.png" alt="">
+          <div class="text txt-path">
+            <p>ثانيا تعلم لغة <span class="mspn">CSS</span> لتنسيق الموقع الخاص بك</p>
+            <p style="margin-top: 30px;"><span class="mspn-f">والألوان وتوزيع العناصر في الصفحة</span> </p>
+            <p class="mt-0">رابط الدورة</p>
+          </div>
+          <a href="https://www.youtube.com/watch?v=X1ulCwyhCVM&list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe" target="_blank" class=" btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10 rad-m">
+          <div class="circle">3</div>
+          <img style="width: 200px;" class="path-img" src="img/html-css.png" alt="">
+          <div class="text txt-path">
+            <p>مرحلة التطبيق العملي من أهم المراحل لكي</p>
+            <p style="margin-top: 30px;"><span class="mspn-f">(التطبيق الأول) توظف ما تعلمته سابقا</span> </p>
+            <p class="mt-0">رابط الدورة</p>
+          </div>
+          <a href="https://www.youtube.com/watch?v=MBq8ZFEIIaQ&list=PLDoPjvoNmBAzHSjcR-HnW9tnxyuye8KbF" target="_blank" class=" btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10 rad-m">
+          <div class="circle">4</div>
+          <img style="width: 200px;" class="path-img" src="img/html-css.png" alt="">
+          <div class="text txt-path">
+            <p>مرحلة التطبيق العملي من أهم المراحل لكي</p>
+            <p style="margin-top: 30px;"><span class="mspn-f">(التطبيق الثاني) توظف ما تعلمته سابقا</span> </p>
+            <p class="mt-0">رابط الدورة</p>
+          </div>
+          <a href="https://www.youtube.com/watch?v=7_USXxmn7DM&list=PLDoPjvoNmBAy1l-2A21ng3gxEyocruT0t" target="_blank" class=" btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        
+        <div class="wb-1 p-relative bg-white p-10 rad-10 rad-m">
+          <div class="circle">5</div>
+          <img style="width: 200px;" class="path-img" src="img/html-css.png" alt="">
+          <div class="text txt-path">
+            <p>مرحلة التطبيق العملي من أهم المراحل لكي</p>
+            <p style="margin-top: 30px;"><span class="mspn-f">(التطبيق الثالث) توظف ما تعلمته سابقا</span> </p>
+            <p class="mt-0">رابط الدورة</p>
+          </div>
+          <a href="https://www.youtube.com/watch?v=lXVP3rDH9EU&list=PLDoPjvoNmBAxuCSp2_-9LurPqRVwketnc" target="_blank" class=" btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10 rad-m">
+          <div class="circle">6</div>
+          <img style="width: 200px;" class="path-img" src="img/html-css.png" alt="">
+          <div class="text txt-path">
+            <p>مرحلة التطبيق العملي من أهم المراحل لكي</p>
+            <p style="margin-top: 30px;"><span class="mspn-f">(التطبيق الرابع) توظف ما تعلمته سابقا</span> </p>
+            <p class="mt-0">رابط الدورة</p>
+          </div>
+          <a href="https://www.youtube.com/watch?v=4OGWPn-Q__I&list=PLDoPjvoNmBAyGaRGzPVZCkYx5L7Mo9Tbh" target="_blank" class=" btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10 rad-m">
+          <div class="circle">7</div>
+          <img class="path-img path-f" src="img/js.png" alt="">
+          <div class="text txt-path">
+            <p>تعلم لغة <span class="mspn">JavaScript</span> من أهم الخطوات في رحلتك</p>
+            <p style="margin-top: 30px;"><span class="mspn-f">لجعل الموقع تفاعلي ودينامكي</span> </p>
+            <p class="mt-0">رابط الدورة</p>
+          </div>
+          <a href="https://www.youtube.com/watch?v=GM6dQBmc-Xg&list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv" target="_blank" class=" btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10 rad-m">
+          <div class="circle">8</div>
+          <img class="path-img path-f" src="img/js.png" alt="">
+          <div class="text txt-path">
+            <p>التطبيق علي لغة <span class="mspn-f">جافا سكربت</span> من اهم الخطوات</p>
+            <p style="margin-top: 30px;"><span class="mspn-f">وهذه المرحلة مستمرة معك الي الأبد حتي تتقن اللغة باذن الله</span> </p>
+            <p class="mt-0">رابط الدورة</p>
+          </div>
+          <a href="https://www.youtube.com/watch?v=Nxny2QvEIm0&list=PLDoPjvoNmBAycCXz5d9WvqlmykUIys5e8" target="_blank" class=" btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10 rad-m">
+          <div class="circle">9</div>
+          <img class="path-img" src="img/bootstrap-logo.png" alt="">
+          <div class="text txt-path">
+            <p>هو فريم ورك تابع للغة ال <span class="mspn">CSS</span> التي ذكرناها </p>
+            <p style="margin-top: 30px;"><span class="mspn-f">من المهم أن تستعمله لكي يوفر عليك الوقت والجهد</span> </p>
+            <p class="mt-0">رابط الدورة</p>
+          </div>
+          <a href="https://www.youtube.com/watch?v=9mdGUKFu5OQ&list=PLDoPjvoNmBAyvm7f--dc6XqkpfDcen_vQ" target="_blank" class=" btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10 rad-m">
+          <div class="circle">10</div>
+          <img class="path-img" src="img/reac.png" alt="">
+          <div class="text txt-path">
+            <p>هو فريم ورك للغة ال <span class="mspn">JS</span> وتعلمه مهم جدا</p>
+            <p style="margin-top: 30px;"><span class="mspn-f">للتعامل مع ال <span class="mspn">API</span> وارسال البيانات لل <span class="mspn">Back-End</span></span> </p>
+            <p class="mt-0">رابط الدورة</p>
+          </div>
+          <a href="https://www.youtube.com/watch?v=p8nOfP2fw24&list=PLQtNtS-WfRa9LbmD8ON7rWhn-AtKTGdkn" target="_blank" class=" btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10 rad-m">
+          <div class="circle">11</div>
+          <img class="path-img" src="img/sass.png" alt="">
+          <div class="text txt-path">
+            <p>تعلم لغة <span class="mspn">SASS</span> لتضيف مزايا لغات البرمجة في ال</p>
+            <p style="margin-top: 30px;"><span class="mspn-f"> <span class="mspn">Code</span> الخاص بك في لغة <span class="mspn">CSS</span> لتوفير الوقت</span> </p>
+            <p class="mt-0">رابط الدورة</p>
+          </div>
+          <a href="https://www.youtube.com/watch?v=Di_RlcpkpN4&list=PLDoPjvoNmBAzlpyFHOaB3b-eubmF0TAV2" target="_blank" class=" btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10 rad-m">
+          <div class="circle">12</div>
+          <img class="path-img" src="img/pug.svg" alt="">
+          <div class="text txt-path">
+            <p>تعلم <span class="mspn">PugJS</span>  مهم جدا تضيف مزايا اليك أثناء كتابة</p>
+            <p style="margin-top: 30px;"><span class="mspn-f"> <span class="mspn">Code</span> الخاص بك في لغة <span class="mspn">CSS</span> لتوفير الوقت</span> </p>
+            <p class="mt-0">رابط الدورة</p>
+          </div>
+          <a href="https://www.youtube.com/watch?v=txOuCrg7iOE&list=PLDoPjvoNmBAxckfbgAzwwxeoeBfi0y724" target="_blank" class=" btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10 rad-m">
+          <div class="circle">13</div>
+          <img class="path-img" src="img/gulp.png" alt="">
+          <div class="text txt-path">
+            <p>تعلم <span class="mspn">GulpJS</span> مهم لأنه سيوفر عليك الكثير من </p>
+            <p style="margin-top: 30px;"><span class="mspn-f">الوقت لانه يقوم بالعمليات المتكرر نيابة عنك</span></p>
+            <p class="mt-0">رابط الدورة</p>
+          </div>
+          <a href="https://www.youtube.com/watch?v=BLFndK5n29I&list=PLDoPjvoNmBAxyli7mXgNBhkRB-zgSHvL8" target="_blank" class=" btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10 rad-m">
+          <div class="circle">14</div>
+          <img class="path-img" src="img/github-logo.png" alt="">
+          <div class="text txt-path">
+            <p>تعلم <span class="mspn">GitHub</span> من أهم الخطوات لأنه يساعدك في </p>
+            <p style="margin-top: 30px;"><span class="mspn-f">الحفاظ علي مشاريعك ورفعها عليه مجانا</span></p>
+            <p class="mt-0">رابط الدورة</p>
+          </div>
+          <a href="https://www.youtube.com/watch?v=ACOiGZoqC8w&list=PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF" target="_blank" class=" btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10 rad-m">
+          <div class="circle">15</div>
+          <img class="path-img path-img-f" src="img/cmd-terminal-icon.png" alt="">
+          <div class="text txt-path">
+            <p>تعلم <span class="mspn">Command Line Commands</span> لتطوير مستواك</p>
+            <p style="margin-top: 30px;"><span class="mspn-f"> في ال <span class="mspn">Developments</span> ولتسريع أداء العمل</span></p>
+            <p class="mt-0">رابط الدورة</p>
+          </div>
+          <a href="https://www.youtube.com/watch?v=JVs2Ywy7wGQ&list=PLDoPjvoNmBAxzNO8ixW83Sf8FnLy_MkUT" target="_blank" class=" btn-shape my-a">Go<i class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+  </div>
+  <span class="to-up">UP</span>
+  <script src="js/app.js"></script>
+</body>
+</html>
