@@ -20,3 +20,10 @@ function toggleMenu() {
   subMenu.classList.toggle("open-menu")
 }
 
+
+function scrollTop() {
+  const scrollTop = document.getElementById("scroll-up");
+  if (this.scrollY >= 650) scrollTop.classList.add("show-scroll");
+  else scrollTop.classList.remove("show-scroll");
+}
+window.addEventListener("scroll", scrollTop);
