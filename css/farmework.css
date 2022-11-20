@@ -243,9 +243,13 @@
   font-size: 19px;
   cursor: pointer;
   transition: 0.3s;
+  margin-top: 19حء;
 }
 .btn-shape:hover {
   box-shadow: #4F00E4 0 1px 30px;
+}
+.rad-m {
+  box-shadow: 0 0 7px 0 inset #ccc;
 }
 /* End Componets*/
 /* background-color: #2b2b2b; */

@@ -1,157 +1,28 @@
 
 
-
-/* CSS */
-
-
-/* CSS */
-.button-49,
-.button-49:after {
-  width: 150px;
-  height: 76px;
-  line-height: 78px;
-  font-size: 20px;
-  font-family: 'Bebas Neue', sans-serif;
-  background: linear-gradient(45deg, transparent 5%, #4f00e4 5%);
-  border: 0;
-  color: #fff;
-  letter-spacing: 3px;
-  outline: transparent;
+.btn {
   position: relative;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  border-radius: 10px;
-  padding: 4px 10px;
-    border-radius: 6px;
-    background-color: #4F00E4;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-weight: bold;
-    display: flex;
-    margin: auto;
-    width: 150px;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-    font-size: 19px;
-    cursor: pointer;
-}
-
-.button-49:after {
-  --slice-0: inset(50% 50% 50% 50%);
-  --slice-1: inset(80% -6px 0 0);
-  --slice-2: inset(50% -6px 30% 0);
-  --slice-3: inset(10% -6px 85% 0);
-  --slice-4: inset(40% -6px 43% 0);
-  --slice-5: inset(80% -6px 5% 0);
-  
-  content: 'ALTERNATE TEXT';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #4f00e4 3%, #4f00e4 5%, #4f00e4 5%);
-  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #4f00e4;
-  clip-path: var(--slice-0);
-}
-
-.button-49:hover:after {
-  animation: 1s glitch;
-  animation-timing-function: steps(3, end);
-}
-
-@keyframes glitch {
-  0% {
-    clip-path: var(--slice-1);
-    transform: translate(-20px, -10px);
-  }
-  10% {
-    clip-path: var(--slice-3);
-    transform: translate(10px, 10px);
-  }
-  20% {
-    clip-path: var(--slice-1);
-    transform: translate(-10px, 10px);
-  }
-  30% {
-    clip-path: var(--slice-3);
-    transform: translate(0px, 5px);
-  }
-  40% {
-    clip-path: var(--slice-2);
-    transform: translate(-5px, 0px);
-  }
-  50% {
-    clip-path: var(--slice-3);
-    transform: translate(5px, 0px);
-  }
-  60% {
-    clip-path: var(--slice-4);
-    transform: translate(5px, 10px);
-  }
-  70% {
-    clip-path: var(--slice-2);
-    transform: translate(-10px, 10px);
-  }
-  80% {
-    clip-path: var(--slice-5);
-    transform: translate(20px, -10px);
-  }
-  90% {
-    clip-path: var(--slice-1);
-    transform: translate(-10px, 0px);
-  }
-  100% {
-    clip-path: var(--slice-1);
-    transform: translate(0);
-  }
-}
-
-@media (min-width: 768px) {
-  .button-49,
-  .button-49:after {
-    width: 186px;
-    height: 69px;
-    line-height: 88px;
-  }
-}
-
-
-<!-- HTML !-->
-<button class="button-36" role="button">Button 36</button>
-
-/* CSS */
-.button-36 {
-  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
-  border-radius: 8px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  flex-shrink: 0;
-  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #4F00E4;
   font-size: 16px;
-  font-weight: 500;
-  height: 4rem;
-  padding: 0 1.6rem;
-  text-align: center;
-  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-  transition: all .5s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  border-radius: 0;
 }
+/*  */
 
-.button-36:hover {
-  box-shadow: #4F00E4 0 1px 30px;
-  transition-duration: .1s;
-}
 
-@media (min-width: 768px) {
-  .button-36 {
-    padding: 0 2.6rem;
-  }
+.btn:hover {
+  background: #4F00E4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #4F00E4,
+              0 0 25px #4F00E4,
+              0 0 50px #4F00E4,
+              0 0 100px #4F00E4;
 }
