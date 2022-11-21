@@ -47,6 +47,18 @@ body.dark-theme .notification i {
   color: white;
   display: flex;
 }
+body.dark-theme .sub-menu {
+  background-color: var(--container-color);
+}
+body.dark-theme .sub-menu h2 {
+  color: var(--title-color);
+}
+body.dark-theme .sub-menu p {
+  color: var(--title-color);
+}
+body.dark-theme .sub-menu span {
+  color: var(--title-color);
+}
 * {
   box-sizing: border-box;
 }
@@ -214,6 +226,9 @@ header .image-text .header-text {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.w-44 {
+  min-width: 44px !important;
 }
 .sidebar li .icon,
 .sidebar li .text {

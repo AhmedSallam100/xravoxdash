@@ -2,7 +2,8 @@
 let body = document.querySelector("body"),
   sidebar = body.querySelector(".sidebar"),
   toggle = body.querySelector(".toggle"),
-  searchBtn = body.querySelector(".search-box");
+  searchBtn = body.querySelector(".search-box"),
+  myIcon = document.querySelectorAll(".icon")
 
 toggle.addEventListener("click", () => {
   sidebar.classList.toggle("close");
@@ -10,6 +11,12 @@ toggle.addEventListener("click", () => {
 
 searchBtn.addEventListener("click", () => {
   sidebar.classList.remove("close");
+});
+
+toggle.addEventListener("click", () => {
+  myIcon.forEach((ele) => {
+    ele.classList.toggle("w-44")
+  })
 });
 
 // Drop Menu 
