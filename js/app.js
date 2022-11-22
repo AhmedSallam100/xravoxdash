@@ -12,6 +12,11 @@ toggle.addEventListener("click", () => {
 searchBtn.addEventListener("click", () => {
   sidebar.classList.remove("close");
 });
+searchBtn.addEventListener("click", () => {
+  myIcon.forEach((ele) => {
+    ele.classList.toggle("w-44")
+  })
+});
 
 toggle.addEventListener("click", () => {
   myIcon.forEach((ele) => {
@@ -42,23 +47,7 @@ const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";
 const iconTheme = "uil-sun";
 
-// const selectedTheme = localStorage.getItem("selected-theme");
-// const selectedIcon = localStorage.getItem("selected-icon");
 
-// const getCurrentTheme = () =>
-//   document.body.classList.contains("darkTheme") ? "dark" : "light";
-// const getCurrentIcon = () =>
-//   themeButton.classList.contains("iconTheme") ? "uil-moon" : "uil-sun";
-
-
-// if (selectedTheme) {
-//   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
-//     darkTheme
-//   );
-//   themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
-//     iconTheme
-//   );
-// }
 if (localStorage.getItem("dark")) {
   document.body.classList.add(darkTheme)
   themeButton.classList.add(iconTheme);
@@ -66,11 +55,24 @@ if (localStorage.getItem("dark")) {
 themeButton.addEventListener("click", () => {
   document.body.classList.toggle(darkTheme);
   themeButton.classList.toggle(iconTheme);
-  // localStorage.setItem("selected-theme", getCurrentTheme());
-  // localStorage.setItem("selected-icon", getCurrentIcon());
-  if (document.body.classList == "dark-theme") {
+  if (document.body.classList.contains("dark-theme")) {
     localStorage.setItem("dark", darkTheme)
   }else {
     localStorage.removeItem("dark")
   }
 })
+
+// Random Color
+
+let circle = document.querySelectorAll(".circle");
+
+setInterval(() => {
+  let color = ["A", "B", "C", "D", "E", "F", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  let a = "#";
+  for (let i = 0; i < 6; i++) {
+    a += color[Math.floor(Math.random() * color.length)];
+  }
+  circle.forEach((ele) => {
+    ele.style.color = a
+  })
+}, 1000)

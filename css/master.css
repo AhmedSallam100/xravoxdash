@@ -35,6 +35,7 @@ body.dark-theme .sidebar  {
 }
 body.dark-theme .wb-1 .circle {
   color: white;
+  transition: var(--tran-3);
   background-color: var(--container-color);
 }
 body.dark-theme .wb-1 p {
@@ -475,9 +476,7 @@ header .image-text .header-text {
   cursor: pointer;
 }
 .head .icons .notification > i {
-  position: absolute;
-  left: -24px;
-  top: 13px;
+  margin-right: 10px;
 }
 .img-2 {
   width: 50px;
@@ -661,6 +660,7 @@ h2 {
   top: -15px;
   background-color: white;
   /* box-shadow: 0 0 7px 0 inset #ccc; */
+  transition: var(--tran-3);
   font-family: Arial, Helvetica, sans-serif;
 }
 .wave-1 {
