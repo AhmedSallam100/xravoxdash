@@ -12,9 +12,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <title>Ravox</title>
 </head>
-<body>
+<body class="dark-theme">
   <div class="page d-flex">
-    <nav class="sidebar close">
+    <div class="background form">
+      <div class="shape"></div>
+      <div class="shape"></div>
+  </div>
+  <div class="form">
+      <h3>Login Here</h3>
+      <label for="username">Username</label>
+      <input class="in-text" type="text" placeholder="Email or Phone" id="username">
+      <label for="password">Password</label>
+      <input class="in-text pass" type="password" placeholder="Password" id="my-passsss" >
+      <div style="width: fit-content;" class="btn-shape" id="myBtnss">Show Password</div>
+      <button style="color: black;" class="bttn">Log In</button>
+  </div>
+    <nav class="sidebar fb-58 close">
       <header>
         <div class="image-text">
           <span class="image">
@@ -88,7 +101,7 @@
         </div>
       </div>
     </nav>
-    <div class="content w-full">
+    <div class="content fb-58 w-full">
       <!-- Start Head -->
       <div class="head bg-white p-15 between-flex">
         
@@ -106,7 +119,7 @@
           <div class="sub-menu">
             <div class="user-info">
               <img class="img-p" src="img/logo-s.jpeg" alt="">
-              <h2>Ahmed Sallam</h2>
+              <h2>----------</h2>
             </div>
             <hr>
             <a class="sub-menu-link ff" href="#profile">
@@ -124,7 +137,7 @@
               <p>Feedback</p>
               <span>></span>
             </a>
-            <a class="sub-menu-link ff" href="#settings">
+            <a class="sub-menu-link ff m-js" href="#">
               <i class="uil uil-signout"></i>
               <p>Log Out</p>
               <span>></span>

@@ -3,7 +3,8 @@ let body = document.querySelector("body"),
   sidebar = body.querySelector(".sidebar"),
   toggle = body.querySelector(".toggle"),
   searchBtn = body.querySelector(".search-box"),
-  myIcon = document.querySelectorAll(".icon")
+  myIcon = document.querySelectorAll(".icon"),
+  content = document.querySelector(".content")
 
 toggle.addEventListener("click", () => {
   sidebar.classList.toggle("close");
@@ -11,6 +12,7 @@ toggle.addEventListener("click", () => {
 
 searchBtn.addEventListener("click", () => {
   sidebar.classList.remove("close");
+  content.classList.toggle("ml-250")
 });
 searchBtn.addEventListener("click", () => {
   myIcon.forEach((ele) => {
@@ -76,3 +78,61 @@ setInterval(() => {
     ele.style.color = a
   })
 }, 1000)
+
+// Sign in
+
+let input = document.querySelectorAll(".in-text")
+let btn = document.querySelector(".bttn")
+let form = document.querySelectorAll(".form")
+let logOut = document.querySelector(".m-js")
+let pass = document.querySelector(".pass")
+let username = document.getElementById("username")
+
+
+setInterval(() => {
+  if (localStorage.getItem("name")) {
+    document.querySelector("body.dark-theme .sub-menu h2").innerHTML = localStorage.getItem("name")
+    form.forEach((ele) => {
+      ele.style.display = "none"
+    })
+    content.classList.remove("fb-58")
+    sidebar.classList.remove("fb-58")
+  } else {
+    content.classList.add("fb-58")
+    sidebar.classList.add("fb-58")
+  }
+  logOut.onclick = function () {
+    localStorage.removeItem("name")
+    form.forEach((ele) => {
+      ele.style.display = "block"
+    })
+    document.querySelector("body.dark-theme .sub-menu h2").innerHTML = "User964"
+  }
+}, 0)
+
+btn.onclick = function (e) {
+  e.preventDefault()
+  if (username.value && pass.value) {
+    window.localStorage.setItem("name", username.value)
+    document.querySelector("body.dark-theme .sub-menu h2").innerHTML = username.value
+    form.forEach((ele) => {
+      ele.remove()
+    })
+  }
+}
+
+// Show Password
+
+let myButton = document.getElementById("myBtnss"),
+    myInput = document.getElementById("my-passsss");
+
+myButton.onclick = function() {
+  'use strict';
+  if (this.textContent === "Show Password") {
+    myInput.setAttribute("type", "text");
+    this.textContent = "Hide Password"
+  } else {
+    myInput.setAttribute("type", "password");
+    this.textContent = "Show Password"
+  }
+}
