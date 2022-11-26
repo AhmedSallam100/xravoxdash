@@ -246,7 +246,7 @@
   margin-top: 19px;
 }
 .btn-shape:hover {
-  box-shadow: #4F00E4 0 1px 30px;
+  box-shadow: #4F00E4 0 1px 30px !important;
 }
 .rad-m {
   box-shadow: 0 0 7px 0 inset #ccc;

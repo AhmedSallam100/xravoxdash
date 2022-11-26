@@ -1,0 +1,309 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+.btn-img {
+  width: fit-content;
+  height: fit-content;
+  font-size: 50px;
+  position: fixed;
+}
+:root {
+  --body-color: #f1f5f9;
+  --sidebar-color: #fff;
+  --purple-color: #4f00e4;
+  --purple-color-alt: rgb(79 0 228 / 80%);
+  --purple-color-light: #f6f5ff;
+  --toogle-color: #ddd;
+  --text-color: #707070;
+  --tran-2: all 0.2s ease;
+  --tran-3: all 0.3s ease;
+  --tran-4: all 0.4s ease;
+  --tran-5: all 0.5s ease;
+  --ani-color: rgb(79 0 228 / 80%);
+}
+body.dark-theme {
+  --hue-color: 250;
+  --container-color: hsl(var(--hue-color), 29%, 16%);
+  --body-color: hsl(var(--hue-color), 28%, 12%);
+  --ani-color: white;
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 75%);
+}
+body.dark-theme .wb-1 {
+  background-color: var(--container-color);
+}
+body.dark-theme .wb-1  {
+  background-color: var(--container-color);
+}
+body.dark-theme .head  {
+  background-color: var(--container-color);
+}
+body.dark-theme .sidebar  {
+  background-color: var(--container-color);
+}
+body.dark-theme .wb-1 .circle {
+  color: white;
+  transition: var(--tran-3);
+  background-color: var(--container-color);
+}
+body.dark-theme .wb-1 p {
+  color: var(--title-color);
+}
+.notification i {
+  cursor: pointer;
+}
+body.dark-theme .notification i {
+  color: white;
+  display: flex;
+}
+body.dark-theme .sub-menu {
+  background-color: var(--container-color);
+}
+body.dark-theme .sub-menu h2 {
+  color: var(--title-color);
+}
+body.dark-theme .sub-menu p {
+  color: var(--title-color);
+}
+body.dark-theme .sub-menu span {
+  color: var(--title-color);
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Droid Arabic Kufi", serif;
+}
+.col {
+  background-color: #444 !important;
+}
+.mst {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.inp {
+  background-color: #444 !important;
+  border: 1px solid #222 !important;
+}
+.inp::placeholder {
+  color: white !important;
+}
+.h3 {
+  color: white;
+}
+.h3::before {
+  background-color: white !important;
+}
+.h3::after {
+  border-color: #222 !important;
+  background-color: white !important;
+}
+.page.ele {
+  background-color: #222;
+}
+*:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+::selection {
+  color: white;
+  background-color: #4f00e4;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--purple-color);
+  box-shadow: 0px 0px 30px 30px var(--purple-color);
+}
+.container-4 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+form {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+form h3 {
+  color: black;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+form input, form textarea {
+  border: 0;
+  outline: none;
+  margin: 10px 0;
+  padding: 20px;
+  resize: none;
+  font-size: 16px;
+  color: black;
+  border-radius: 4px;
+  background-color: rgb(79 0 228 / 80%);
+}
+form button {
+  padding: 15px;
+  border: none;
+  width: 150px !important;
+  margin: 20px auto 0 !important;
+  background-color: var(--purple-color);
+}
+/* Popup */
+.container-5 {
+  min-height: 100vh;
+  position: relative;
+}
+
+.container-5 .left-bx{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #54a0ff;
+  clip-path: polygon(0 0, 60% 0, 40% 100%, 0 100%);
+}
+
+.btn-5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #222f3e;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.25rem;
+  background: var(--purple-color);
+  color: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+              rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  cursor: pointer;
+  z-index: 9999999999;
+  margin-top: 30px;
+  width: fit-content;
+}
+
+.modal{
+  width: 550px;
+  height: 362px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 25%);
+  background: #fff;
+  box-shadow: rgb(0 0 0 / 7%) 0px 1px 2px, rgb(0 0 0 / 7%) 0px 2px 4px, rgb(0 0 0 / 7%) 0px 4px 8px, rgb(0 0 0 / 7%) 0px 8px 16px, rgb(0 0 0 / 7%) 0px 16px 32px, rgb(0 0 0 / 7%) 0px 32px 64px;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s linear;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.modal.active-5{
+  visibility: visible;
+  opacity: 1;
+  z-index: 99999999;
+}
+
+.close-btn{
+  position: relative;
+  left: 92%;
+  width: 40px;
+  height: 40px;
+  box-shadow: rgba(0,0,0,0.07) 0px 3px 8px 0px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.close-btn:hover{
+  transform: rotate(180deg);
+}
+
+.bars{
+  width: 70%;
+  height: 4px;
+  background: #54a0ff;
+  border-radius: 10px;
+}
+
+.bar1{
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.bar2{
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+.modal-body{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-body i {
+  color: var(--purple-color);
+  font-size: 68px;
+}
+
+.modal-body h2{
+  font-weight: 400;
+  color: #222f3e;
+  letter-spacing: 0.75rem;
+  margin: 20px 0 10px 0;
+}
+
+.modal-body p{
+  width: 300px;
+  color: #576574;
+  text-align: center;
+  margin-bottom: -26px;
+  display: flex;
+  justify-content: center;
+  margin-top: 23px;
+}
+
+.modal-body .join-btn{
+  border: none;
+  outline: none;
+  width: 200px;
+  padding: 10px 20px;
+  background: #54a0ff;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+  cursor: pointer;
+}

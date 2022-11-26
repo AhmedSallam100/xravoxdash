@@ -1,49 +1,24 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/farmework.css">
+  <link rel="stylesheet" href="css/pop.css">
   <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/fd.css">
+  <link rel="stylesheet" href="css/farmework.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <title>Ravox</title>
 </head>
+
 <body class="dark-theme">
   <div class="page d-flex">
-    <div class="background form">
-      <div class="shape"></div>
-      <div class="shape"></div>
-    </div>
-    <div class="form">
-      <div class="log">
-        <h3>Log In</h3>
-        <div class="error-u"></div>
-        <label for="username">Username</label>
-        <input class="in-text" type="text" placeholder="Username" id="username">
-        <input type="file" value="Choose Img" id="img-input" accept="image/png, image/jpg">
-        <div class="error-p"></div>
-        <label for="password">Password</label>
-        <input class="in-text pass" type="password" placeholder="Password" id="my-passsss">
-        <i id="myBtnss" class="uil uil-eye btn-shape"></i>
-        <button style="color: black;" class="bttn mt-15">Log In</button>
-        <p class="crAc">Dont Have Account ? Creat One</p>
-      </div>
-      <div class="sign op-0">
-        <h3>Sign In</h3>
-        <label for="username">Username</label>
-        <input class="in-text sign-u" type="text" placeholder="Username" id="username">
-        <input type="file" value="Choose Img" id="img-input" accept="image/png, image/jpg">
-        <label for="password">Password</label>
-        <input class="in-text pass sign-p" type="password" placeholder="Password" id="my-passsss">
-        <i id="myBtnss" class="uil uil-eye btn-shape"></i>
-        <button style="color: black;" class="bttn mt-15 sign-b">Sign In</button>
-        <p class="crAc">Already Have Account ? Log In</p>
-      </div>
-    </div>
+
     <nav class="sidebar close">
       <header>
         <div class="image-text">
@@ -123,7 +98,7 @@
     <div class="content w-full">
       <!-- Start Head -->
       <div class="head bg-white p-15 between-flex">
-        
+
         <div class="search p-relative">
           <input class="p-10 rad-10" type="search" placeholder="Type A Keyword">
         </div>
@@ -165,32 +140,43 @@
         </div>
       </div>
       <!-- End Head -->
-      <h1 class="p-relative my-stl-2">المسارات التعليمية</h1>
-      <div class="container-c">
-        <div class="card">
-            <div class="box-card">
-              <div class="content-2">
-                <h2>01</h2>
-                <h3><span class="mspn">Front-End</span></h3>
-                <p>هنا ستجد باذن الله الخريطة التعلمية لكي تصبح </p>
-                <p><span class="mspn">Front-End Developer</span> باذن الله</p>
-                <a href="index-fd.html" class=" btn-shape my-a hov">Go<i class="uil uil-angle-right-b my-i"></i></a>
-              </div>
-            </div>
+      <h1 class="p-relative my-stl fd">الأراء</h1>
+      <div class="container-4">
+        <div class="modal">
+          <div class="close-btn">
+            <div class="bars bar1"></div>
+            <div class="bars bar2"></div>
           </div>
-        <div class="card">
-            <div class="box-card">
-              <div class="content-2">
-                <h2>02</h2>
-                <h3><span class="mspn">Back-End</span></h3>
-                <p>هنا ستجد باذن الله الخريطة التعلمية لكي تصبح </p>
-                <p><span class="mspn">Back-End Developer</span> باذن الله</p>
-                <a href="index-bd.html" class=" btn-shape my-a hov">Go<i class="uil uil-angle-right-b my-i"></i></a>
-              </div>
-            </div>
+          <div class="modal-body">
+            <i class="uil uil-grin"></i>
+            <h2>AWESOME</h2>
+            <p>Your Msg Has Been Sent. Thanks</p>
+            <button type="button" style="border: none; margin-top: 70px;" class="btn-shape my-a زفت">Submit</button>
           </div>
         </div>
-        
-  <script src="js/app.js"></script>
+        <form class="rad-10 contact_form" onsubmit="sendEmail(); reset(); return false;">
+          <h3>Get In Touch</h3>
+          <input type="text" id="fullName" placeholder="Your Name" required>
+          <input type="email" id="email_id" placeholder="Your Email" required>
+          <input type="text" id="phone_id" placeholder="Your Phone (Not Important)">
+          <textarea name="" id="message" cols="30" rows="4" placeholder="Write Your Message"></textarea>
+          <button class="btn-shape my-a" id="btn55" style="width: fit-content;" type="submit">Send</button>
+        </form>
+      </div>
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup-icon"></i>
+      </a>
+    </div>
+    <!-- avinash6252@gmail.com -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("AAvwjIAxgTgat5tQ2");
+      })();
+    </script>
+    <script src="js/fs.js"></script>
+    <script src="js/app.js"></script>
 </body>
+
 </html>

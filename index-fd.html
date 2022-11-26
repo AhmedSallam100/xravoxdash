@@ -14,6 +14,36 @@
 </head>
 <body class="dark-theme">
   <div class="page d-flex">
+    <div class="background form">
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+    <div class="form">
+      <div class="log">
+        <h3>Log In</h3>
+        <div class="error-u"></div>
+        <label for="username">Username</label>
+        <input class="in-text" type="text" placeholder="Username" id="username">
+        <input type="file" value="Choose Img" id="img-input" accept="image/png, image/jpg">
+        <div class="error-p"></div>
+        <label for="password">Password</label>
+        <input class="in-text pass" type="password" placeholder="Password" id="my-passsss">
+        <i id="myBtnss" class="uil uil-eye btn-shape"></i>
+        <button style="color: black;" class="bttn mt-15">Log In</button>
+        <p class="crAc">Dont Have Account ? Creat One</p>
+      </div>
+      <div class="sign op-0">
+        <h3>Sign In</h3>
+        <label for="username">Username</label>
+        <input class="in-text sign-u" type="text" placeholder="Username" id="username">
+        <input type="file" value="Choose Img" id="img-input" accept="image/png, image/jpg">
+        <label for="password">Password</label>
+        <input class="in-text pass sign-p" type="password" placeholder="Password" id="my-passsss">
+        <i id="myBtnss" class="uil uil-eye btn-shape"></i>
+        <button style="color: black;" class="bttn mt-15 sign-b">Sign In</button>
+        <p class="crAc">Already Have Account ? Log In</p>
+      </div>
+    </div>
     <nav class="sidebar close">
       <header>
         <div class="image-text">
@@ -29,10 +59,6 @@
       </header>
       <div class="menu-bar">
         <div class="menu">
-          <li style="height: 36px; border-radius: 3px;" class="search-box d-flex">
-            <i style="min-width: 56px;" class="uil uil-search icon"></i>
-            <input style="height: 34px;" type="text" placeholder="Search...">
-          </li>
           <ul class="menu-links">
             <li class="nav-link">
               <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
@@ -47,7 +73,7 @@
               </a>
             </li>
             <li class="nav-link">
-              <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="profile.html">
+              <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="index-bk.html">
                 <i class="uil uil-notebooks icon"></i>
                 <span class="text nav-text">الكتب</span>
               </a>
@@ -74,6 +100,12 @@
               <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="files.html">
                 <i class="uil uil-comment-search icon"></i>
                 <span class="text nav-text">الأسئلة & الأجوبة</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="index-fb.html">
+                <i class="uil uil-envelope-question icon"></i>
+                <span class="text nav-text">الأراء</span>
               </a>
             </li>
           </ul>
@@ -119,7 +151,7 @@
               <p>Settings</p>
               <span>></span>
             </a>
-            <a class="sub-menu-link ff" href="#settings">
+            <a class="sub-menu-link ff" href="index-fb.html">
               <i class="uil uil-envelope-question"></i>
               <p>Feedback</p>
               <span>></span>
