@@ -173,9 +173,9 @@ myButton.forEach((ele) => {
       this.classList = "uil uil-eye-slash btn-shape"
     } else {
       myInput.forEach((ele) => {
-        ele.setAttribute("type", "text");
+        ele.setAttribute("type", "password");
+        this.classList = "uil uil-eye btn-shape";
       })
-      this.classList = "uil uil-eye btn-shape";
     }
   }
 })
