@@ -10,16 +10,6 @@ toggle.addEventListener("click", () => {
   sidebar.classList.toggle("close");
 });
 
-// searchBtn.addEventListener("click", () => {
-//   sidebar.classList.remove("close");
-//   content.classList.toggle("ml-250")
-// });
-// searchBtn.addEventListener("click", () => {
-//   myIcon.forEach((ele) => {
-//     ele.classList.toggle("w-44")
-//   })
-// });
-
 toggle.addEventListener("click", () => {
   myIcon.forEach((ele) => {
     ele.classList.toggle("w-44")
@@ -69,6 +59,7 @@ themeButton.addEventListener("click", () => {
 // Random Color
 
 let circle = document.querySelectorAll(".circle");
+let myWb = document.querySelector(".m-wb");
 
 setInterval(() => {
   let color = ["A", "B", "C", "D", "E", "F", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -79,6 +70,8 @@ setInterval(() => {
   circle.forEach((ele) => {
     ele.style.color = a
   })
+  myWb.style.borderTopColor = a
+  myWb.style.borderBottomColor = a
 }, 1000)
 
 // Sign in
@@ -149,12 +142,8 @@ btn.onclick = function () {
   }
   else if (localStorage.getItem("sign-U") !== username.value ) {
     btn.classList.toggle("anmit")
-    // document.querySelector(".error-u").innerHTML = "Usarname Not Found"
-    // document.querySelector(".error-p").innerHTML = ""
   }else if (localStorage.getItem("sign-P") !== pass.value) {
     btn.classList.toggle("anmit")
-    // document.querySelector(".error-p").innerHTML = "Password Not Found"
-    // document.querySelector(".error-u").innerHTML = ""
   }
 }
 
@@ -208,11 +197,8 @@ let tabsArray = Array.from(tabs);
 let divs = document.querySelectorAll(".content4 > div");
 let divsArray = Array.from(divs);
 
-// console.log(tabsArray);
-
 tabsArray.forEach((ele) => {
   ele.addEventListener("click", function (e) {
-    // console.log(ele);
     tabsArray.forEach((ele) => {
       ele.classList.remove("active");
     });
@@ -225,13 +211,13 @@ tabsArray.forEach((ele) => {
   });
 });
 
+// Show Loader
 
-// function myBalot(str) {
-//   let mySol =  (str.length / 2);
-//   if (str % 2 == 0) {
-//     return str.charAt(mySol)
-//   } else {
-//     return `${str.charAt(mySol - true)}${str.charAt(mySol)} `
-//   }
-// }
-// console.log(myBalot('Ahmedd'))
+let myPage = document.querySelector(".page"),
+    myLoad = document.querySelector(".loader-1")
+
+setTimeout(() => {
+  myPage.classList.remove("fb-11")
+  myLoad.style.opacity = "0"
+  myLoad.style.display = "none"
+}, 2500)
