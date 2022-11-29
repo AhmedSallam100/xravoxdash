@@ -605,6 +605,7 @@ h2 {
 .wb-3 {
   width: 290px;
   height: 80px;
+  border-radius: 6px;
 }
 .mspn {
   font-weight: bold;
@@ -805,7 +806,7 @@ body .container-c .card .box-card .content-2 a {
   margin-top: 20px;
   box-shadow: 0 10px 20px rgb(0 0 0 / 20%);
   transition: 0.5s;
-  left: 26%;
+  left: 20%;
   background-color: #4f00e4;
 }
 body .container-c .card .box-card .content-2 a:hover {
