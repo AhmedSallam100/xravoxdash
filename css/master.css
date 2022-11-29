@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600;800;1000&display=swap');
 .btn-img {
   width: fit-content;
   height: fit-content;
@@ -86,10 +86,10 @@ html {
 }
 body {
   margin: 0;
-  font-family: "Droid Arabic Kufi", serif;
+  font-family: 'Cairo', sans-serif;
 }
 pre {
-  font-family: "Droid Arabic Kufi", serif;
+  font-family: 'Cairo', sans-serif;
 }
 .col {
   background-color: #444 !important;
@@ -264,6 +264,9 @@ header .image-text .header-text {
 .w-44 {
   min-width: 44px !important;
 }
+.ml-250 {
+  margin-left: 250px !important;
+}
 .sidebar li .icon,
 .sidebar li .text {
   color: var(--text-color);
@@ -326,6 +329,11 @@ header .image-text .header-text {
 .sidebar.close .text {
   opacity: 0;
 }
+@media (max-width: 550px) {
+  .sidebar header .toggle {
+    display: none !important;
+  }
+}
 /* End Sidebar */
 /* Start Scroll To Top */
 .to-up {
@@ -351,6 +359,7 @@ header .image-text .header-text {
 .content {
   overflow: hidden;
   margin-left: 80px;
+  transition: var(--tran-3);
 }
 .head .search::before {
   content: "";
@@ -646,73 +655,7 @@ h2 {
   white-space: nowrap !important;
   animation: new-typing-3 3s 1s steps(6) infinite both, blink 0.5s 1s infinite !important;
 }
-.my-a i {
-  font-size: 20px;
-  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-  animation: heartbeat 1.5s ease-in-out infinite both;
-}
-.my-a:hover {
-  -webkit-animation: vibrate-1 0.3s linear infinite both;
-  animation: vibrate-1 0.3s linear infinite both;
-}
 /* Start Animations */
-
-/* @-webkit-keyframes shake-horizontal {
-  0%,
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  10%,
-  30%,
-  50%,
-  70% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
-  }
-  20%,
-  40%,
-  60% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
-  }
-  80% {
-    -webkit-transform: translateX(8px);
-            transform: translateX(8px);
-  }
-  90% {
-    -webkit-transform: translateX(-8px);
-            transform: translateX(-8px);
-  }
-}
-@keyframes shake-horizontal {
-  0%,
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  10%,
-  30%,
-  50%,
-  70% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
-  }
-  20%,
-  40%,
-  60% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
-  }
-  80% {
-    -webkit-transform: translateX(8px);
-            transform: translateX(8px);
-  }
-  90% {
-    -webkit-transform: translateX(-8px);
-            transform: translateX(-8px);
-  }
-} */
 /* End Animations */
 /* Start Paths */
 .circle-2 img {
@@ -883,20 +826,20 @@ body .container-c .card .box-card .content-2 a:hover i {
   }
 }
 @media (max-width: 500px){
-body .container-c {
-  display: grid;
-  grid-template-columns: minmax(100px, 1fr);
-  /* margin: 0px 20px 0px 20px; */
-  margin-left: 0;
-  margin-right: 10px;
-  gap: 10px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.page .my-stl-2 {
-  font-size: 27px;
-}
+  body .container-c {
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr);
+    /* margin: 0px 20px 0px 20px; */
+    margin-left: 0;
+    margin-right: 10px;
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .page .my-stl-2 {
+    font-size: 27px;
+  }
 }
 .scrollup {
   position: fixed;
@@ -1206,6 +1149,25 @@ box-shadow: none;
   font-size: 16px;
   text-decoration: underline;
 }
+.in-img {
+  width: 408px;
+  height: 229px;
+  display: flex;
+  margin: auto;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.cs-img {
+  height: 267px;
+}
+.lh-3 {
+  line-height: 3;
+}
+@media (max-width: 600px) {
+  .in-img {
+    width: 100%;
+  }
+}
 /* End Article */
 /* Start Animation */
 @keyframes typing {
@@ -1505,7 +1467,6 @@ section {
       transform: rotate(-360deg);
   }
 }
-
 @keyframes loader-1-inner {
   0% {
       -webkit-transform: rotate(0deg);
@@ -1516,5 +1477,4 @@ section {
       transform: rotate(-360deg);
   }
 }
-
 /* End Loader */

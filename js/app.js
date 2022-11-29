@@ -15,6 +15,9 @@ toggle.addEventListener("click", () => {
     ele.classList.toggle("w-44")
   })
 });
+toggle.addEventListener("click", () => {
+  content.classList.toggle("ml-250")
+})
 
 // Drop Menu 
 

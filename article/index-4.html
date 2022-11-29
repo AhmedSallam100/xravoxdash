@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/farmework.css">
+  <link rel="stylesheet" href="../css/master.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <title>Ravox</title>
+</head>
+
+<body class="dark-theme">
+  <div class="page d-flex">
+    <div class="background form">
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+    <div class="form">
+      <div class="log">
+        <h3>Log In</h3>
+        <div class="error-u"></div>
+        <label for="username">Username</label>
+        <input class="in-text" type="text" placeholder="Username" id="username">
+        <input type="file" value="Choose Img" id="img-input" accept="image/png, image/jpg">
+        <div class="error-p"></div>
+        <label for="password">Password</label>
+        <input class="in-text pass" type="password" placeholder="Password" id="my-passsss">
+        <i id="myBtnss" class="uil uil-eye btn-shape"></i>
+        <button style="color: black;" class="bttn mt-15">Log In</button>
+        <p class="crAc">Dont Have Account ? Creat One</p>
+      </div>
+      <div class="sign op-0">
+        <h3>Sign In</h3>
+        <label for="username">Username</label>
+        <input class="in-text sign-u" type="text" placeholder="Username" id="username">
+        <input type="file" value="Choose Img" id="img-input" accept="image/png, image/jpg">
+        <label for="password">Password</label>
+        <input class="in-text pass sign-p" type="password" placeholder="Password" id="my-passsss">
+        <i id="myBtnss" class="uil uil-eye btn-shape"></i>
+        <button style="color: black;" class="bttn mt-15 sign-b">Sign In</button>
+        <p class="crAc">Already Have Account ? Log In</p>
+      </div>
+    </div>
+    <nav class="sidebar close">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="../img/logo-s.jpeg" alt="">
+          </span>
+          <div class="text header-text">
+            <span class="name">Ravox</span>
+            <span class="prof">Front-End</span>
+          </div>
+        </div>
+        <i class="uil uil-angle-right-b toggle"></i>
+      </header>
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="../index.html">
+                <i class="uil uil-window icon"></i>
+                <span class="text nav-text">المواقع</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="../index-e.html">
+                <i class="uil uil-arrow-growth icon"></i>
+                <span class="text nav-text">المسارات التعليمية</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="../index-bk.html">
+                <i class="uil uil-notebooks icon"></i>
+                <span class="text nav-text">الكتب</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="../index-ar.html">
+                <i class="uil uil-file-info-alt icon"></i>
+                <span class="text nav-text">المقالات</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="../Courses.html">
+                <i class="uil uil-text-fields icon"></i>
+                <span class="text nav-text">النصائح</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="../friends.html">
+                <i class="uil uil-keyboard icon"></i>
+                <span class="text nav-text">الاضافات</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="../files.html">
+                <i class="uil uil-comment-search icon"></i>
+                <span class="text nav-text">الأسئلة & الأجوبة</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="../index-fb.html">
+                <i class="uil uil-envelope-question icon"></i>
+                <span class="text nav-text">الأراء</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="button-content">
+          <li class="">
+            <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="../files.html">
+              <i class="uil uil-signout icon"></i>
+              <span class="text nav-text">تسجيل الخروج</span>
+            </a>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <div class="content w-full">
+      <!-- Start Head -->
+      <div class="head bg-white p-15 between-flex">
+
+        <div class="search p-relative">
+          <input class="p-10 rad-10" type="search" placeholder="Type A Keyword">
+        </div>
+        <div class="icons d-flex align-center">
+          <span class="notification d-flex align-center">
+            <i class="uil uil-moon change-theme " id="theme-button"></i>
+            <img class="img-2" src="../img/logo-s.jpeg" alt="" onclick="toggleMenu()">
+          </span>
+        </div>
+        <!-- Start Drop Menu -->
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img class="img-p" src="../img/logo-s.jpeg" alt="">
+              <h2>Ahmed Sallam</h2>
+            </div>
+            <hr>
+            <a class="sub-menu-link ff" href="#profile">
+              <i class="uil uil-user"></i>
+              <p>Profile</p>
+              <span>></span>
+            </a>
+            <a class="sub-menu-link ff" href="#settings">
+              <i class="uil uil-setting"></i>
+              <p>Settings</p>
+              <span>></span>
+            </a>
+            <a class="sub-menu-link ff" href="../index-fb.html">
+              <i class="uil uil-envelope-question"></i>
+              <p>Feedback</p>
+              <span>></span>
+            </a>
+            <a class="sub-menu-link ff m-js" href="#settings">
+              <i class="uil uil-signout"></i>
+              <p>Log Out</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- End Head -->
+      <h1 class="p-relative my-stl-2 fd fd-2">المقالات</h1>
+      <div class="container-8">
+        <div class="wb-1 m-wb bg-white p-10 m-10">
+          <div class="inf inf-2">
+            <h3 class="my-h3-2 my-h3">كيفية تغيير ايقونة الموقع؟ </h3>
+          </div>
+        </div>
+        <div class="wb-1 bg-white rad-10 p-10 m-10">
+          <pre class="my-pre" style="line-height: 3;">
+            السلام عليكم ورحمة الله وبركاته /رد السلام ثلاثون حسنه. 
+.. 
+عاوز تغير الايقونه بتاعت الموقع بتاعك ومش عارف ازاي كل ما عليك انك هتضيف السطر</"..."=link rel="icon"herf=>
+جوا التاك <span class="mspn">Head</span> بس كدا 
+<a href="https://web.facebook.com/hashtag/%D9%85%D8%B9%D9%84%D9%88%D9%85%D9%87_%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D9%87" target="_blank" class="m-a">#معلومه_برمجيه</a>
+          </pre>
+          <img class="in-img" src="../img/btgp.jpg" alt="">
+        </div>
+        <div class="wb-1 m-wb bg-white p-10 m-10">
+          <div class="inf inf-2">
+            <h3 class="my-h3-2 my-h3">كيفية تغيير لون المؤشر في حقل الادخال؟ </h3>
+          </div>
+        </div>
+        <div class="wb-1 bg-white rad-10 p-10 m-10">
+          <pre class="my-pre lh-3">
+            عاوز تغير لون المؤشر في الادخال ومش عارف ازاي كل ما عليك انك هتستخدم <span class="mspn">caret_color</span> وبعدها اللون المناسب او اللون اللي يعجبك 💜
+            <a href="https://web.facebook.com/hashtag/%D9%85%D8%B9%D9%84%D9%88%D9%85%D9%87_%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D9%87" target="_blank" class="m-a">#معلومه_برمجيه</a>
+          </pre>
+          <img class="in-img cs-img" src="../img/btgp-2.jpg" alt="">
+        </div>
+        <a href="#" class="scrollup" id="scroll-up">
+          <i class="uil uil-arrow-up scrollup-icon"></i>
+        </a>
+      </div>
+      <script src="../js/app.js"></script>
+</body>
+
+</html>
