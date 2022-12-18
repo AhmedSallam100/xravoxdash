@@ -4,29 +4,33 @@ let body = document.querySelector("body"),
   toggle = body.querySelector(".toggle"),
   searchBtn = body.querySelector(".search-box"),
   myIcon = document.querySelectorAll(".icon"),
-  content = document.querySelector(".content")
+  content = document.querySelector(".content"),
+  closeIcon = document.querySelector(".close-side"),
+  openIcon = document.querySelector(".open-side")
 
-toggle.addEventListener("click", () => {
-  sidebar.classList.toggle("close");
-});
+// toggle.addEventListener("click", () => {
+//   sidebar.classList.toggle("close");
+// });
 
-toggle.addEventListener("click", () => {
-  myIcon.forEach((ele) => {
-    ele.classList.toggle("w-44")
-  })
-});
-toggle.addEventListener("click", () => {
-  content.classList.toggle("ml-250")
+// toggle.addEventListener("click", () => {
+//   myIcon.forEach((ele) => {
+//     ele.classList.toggle("w-44")
+//   })
+// });
+closeIcon.addEventListener("click", () => {
+  sidebar.classList.add("closes")
+  content.classList.remove("ml-250")
+  closeIcon.style.display = "none"
+  openIcon.style.display = "flex"
+})
+openIcon.addEventListener("click", () => {
+  sidebar.classList.remove("closes")
+  content.classList.add("ml-250")
+  openIcon.style.display = "none"
+  closeIcon.style.display = "flex"
 })
 
 // Drop Menu 
-
-let subMenu = document.querySelector("#subMenu");
-
-function toggleMenu() {
-  subMenu.classList.toggle("open-menu")
-}
-
 
 function scrollTop() {
   const scrollTop = document.getElementById("scroll-up");
@@ -38,6 +42,7 @@ window.addEventListener("scroll", scrollTop);
 // Dark & Light Mode
 
 const themeButton = document.getElementById("theme-button");
+let webImg = document.querySelector(".logo-web")
 
 const darkTheme = "dark-theme";
 const iconTheme = "uil-sun";
@@ -45,13 +50,17 @@ const iconTheme = "uil-sun";
 if (localStorage.getItem("dark")) {
   document.body.classList.add(localStorage.getItem("dark"))
   themeButton.classList.add(iconTheme);
+  webImg.classList.remove("logo-web-light")
 }else {
   document.body.classList.remove("dark-theme")
   themeButton.classList.remove(iconTheme);
+  webImg.classList.add("logo-web-light")
 }
 themeButton.addEventListener("click", () => {
   document.body.classList.toggle(darkTheme);
   themeButton.classList.toggle(iconTheme);
+  webImg.classList.toggle("logo-web-light")
+
   if (document.body.classList.contains("dark-theme")) {
     localStorage.setItem("dark", darkTheme)
   }else {
@@ -63,6 +72,7 @@ themeButton.addEventListener("click", () => {
 
 let circle = document.querySelectorAll(".circle");
 let myWb = document.querySelector(".m-wb");
+let search2 = document.querySelector(".head .search input")
 
 setInterval(() => {
   let color = ["A", "B", "C", "D", "E", "F", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -75,6 +85,7 @@ setInterval(() => {
   })
   myWb.style.borderTopColor = a
   myWb.style.borderBottomColor = a
+  // search2.style.borderColor = a
 }, 1000)
 
 // Sign in

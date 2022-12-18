@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/all.min.css">
   <link rel="stylesheet" href="../css/farmework.css">
   <link rel="stylesheet" href="../css/master.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,30 +18,30 @@
 
 <body class="dark-theme">
   <div class="page d-flex">
-    <nav class="sidebar close">
+    <nav class="sidebar closes">
+      <i class="uil uil-x close-side"></i>
       <header>
         <div class="image-text">
           <span class="image">
-            <img src="../img/logo-s.jpeg" alt="">
+            <img class="img-p" src="../img/wbsite-logo.png" alt="">
           </span>
           <div class="text header-text">
             <span class="name">Ravox</span>
             <span class="prof">Front-End</span>
           </div>
         </div>
-        <i class="uil uil-angle-right-b toggle"></i>
       </header>
       <div class="menu-bar">
         <div class="menu">
           <ul class="menu-links">
             <li class="nav-link">
-              <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="../index-home.html">
+              <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="../index.html">
                 <i class="uil uil-estate icon"></i>
                 <span class="text nav-text">الصفحة الرئيسية</span>
               </a>
             </li>
             <li class="nav-link">
-              <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="../index.html">
+              <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="../index-web.html">
                 <i class="uil uil-window icon"></i>
                 <span class="text nav-text">المواقع</span>
               </a>
@@ -91,9 +92,9 @@
         </div>
         <div class="button-content">
           <li class="">
-            <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="../files.html">
-              <i class="uil uil-signout icon"></i>
-              <span class="text nav-text">تسجيل الخروج</span>
+            <a class="d-flex actives align-center fs-14 c-black rad-6 p-10" href="rate.html">
+              <i class="uil uil-star icon"></i>
+              <span class="text nav-text">قيمنا</span>
             </a>
           </li>
         </div>
@@ -102,46 +103,18 @@
     <div class="content w-full">
       <!-- Start Head -->
       <div class="head bg-white p-15 between-flex">
-
+        <img class="img-p open-side" src="../img/hum-menu.png" alt="">
         <div class="search p-relative">
           <input class="p-10 rad-10" type="search" placeholder="Type A Keyword">
         </div>
         <div class="icons d-flex align-center">
           <span class="notification d-flex align-center">
             <i class="uil uil-moon change-theme " id="theme-button"></i>
-            <img class="img-2" src="../img/logo-s.jpeg" alt="" onclick="toggleMenu()">
           </span>
         </div>
         <!-- Start Drop Menu -->
-        <div class="sub-menu-wrap" id="subMenu">
-          <div class="sub-menu">
-            <div class="user-info">
-              <img class="img-p" src="../img/logo-s.jpeg" alt="">
-              <h2>Ahmed Sallam</h2>
-            </div>
-            <hr>
-            <a class="sub-menu-link ff" href="#profile">
-              <i class="uil uil-user"></i>
-              <p>Profile</p>
-              <span>></span>
-            </a>
-            <a class="sub-menu-link ff" href="#settings">
-              <i class="uil uil-setting"></i>
-              <p>Settings</p>
-              <span>></span>
-            </a>
-            <a class="sub-menu-link ff" href="../index-fb.html">
-              <i class="uil uil-envelope-question"></i>
-              <p>Feedback</p>
-              <span>></span>
-            </a>
-            <a class="sub-menu-link ff m-js" href="#settings">
-              <i class="uil uil-signout"></i>
-              <p>Log Out</p>
-              <span>></span>
-            </a>
-          </div>
-        </div>
+        <img class="img-p logo-web" alt="">
+        <img class="img-p" src="../img/wbsite-logo.png" alt="">
       </div>
       <!-- End Head -->
       <h1 class="p-relative my-stl-2 fd fd-2">المقالات</h1>
@@ -233,7 +206,7 @@
           </pre>
         </div>
         <a href="#" class="scrollup" id="scroll-up">
-          <i class="uil uil-arrow-up scrollup-icon"></i>
+          <i class="uil uil-angle-double-up scrollup-icon"></i>
         </a>
       </div>
       <script src="../js/app.js"></script>
