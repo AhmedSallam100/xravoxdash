@@ -432,12 +432,12 @@ header .image-text .header-text {
   position: absolute;
   right: 0;
   top: 0;
-  font-size: 37px;
-  padding: 13px;
-  margin: 0;
+  font-size: 32px;
+  padding: 9px;
+  margin: 9px;
   color: white;
   cursor: pointer;
-  border-radius: 0 0 0 6px;
+  border-radius: 50%;
   background-color: #742bcf;
 }
 /* End Sidebar */
