@@ -30,7 +30,7 @@ openIcon.addEventListener("click", () => {
   closeIcon.style.display = "flex"
 })
 
-// Drop Menu 
+// Scroll & Whats 
 
 function scrollTop() {
   const scrollTop = document.getElementById("scroll-up");
@@ -38,6 +38,21 @@ function scrollTop() {
   else scrollTop.classList.remove("show-scroll");
 }
 window.addEventListener("scroll", scrollTop);
+
+function scrollTopWhats() {
+  const scrollTop = document.getElementById("whats");
+  if (this.scrollY >= 650) scrollTop.classList.add("show-whats");
+  else scrollTop.classList.remove("show-whats");
+}
+window.addEventListener("scroll", scrollTopWhats);
+
+// Animation Whats
+
+let whats = document.querySelector(".whats");
+
+setInterval(() => {
+  whats.classList.toggle("wobble");
+}, 1500);
 
 // Dark & Light Mode
 
@@ -87,6 +102,66 @@ setInterval(() => {
   myWb.style.borderBottomColor = a
   // search2.style.borderColor = a
 }, 1000)
+
+// Show Loader
+
+let myPage = document.querySelector(".page"),
+    myLoad = document.querySelector(".loader-1")
+
+setTimeout(() => {
+  myPage.classList.remove("fb-11")
+  myLoad.style.opacity = "0"
+  myLoad.style.display = "none"
+}, 2500)
+
+// Search
+
+// let search3 = document.querySelector(".search");
+// let wb1 = document.querySelectorAll(".wb-1")
+
+// function search(value) {
+//   for (let i = 0; i < wb1.length; i++) {
+
+//   }
+//   // console.log(value)
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Sign in
 
@@ -224,14 +299,3 @@ setInterval(() => {
 //     document.querySelector(e.currentTarget.dataset.cont).style.display = "block";
 //   });
 // });
-
-// Show Loader
-
-let myPage = document.querySelector(".page"),
-    myLoad = document.querySelector(".loader-1")
-
-setTimeout(() => {
-  myPage.classList.remove("fb-11")
-  myLoad.style.opacity = "0"
-  myLoad.style.display = "none"
-}, 2500)

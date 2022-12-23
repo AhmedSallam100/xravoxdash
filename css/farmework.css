@@ -233,22 +233,23 @@
 .btn-shape {
   padding: 4px 10px;
   border-radius: 6px;
-  background-color: #4F00E4;
+  background-image: linear-gradient(45deg,#4F00E4,#9244f0);
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   font-weight: bold;
   display: flex;
   margin: auto;
   width: 150px;
-  height: 40px;
+  height: 44px;
   align-items: center;
   justify-content: center;
-  font-size: 19px;
+  font-size: 21px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.5s;
   margin-top: 19px;
 }
 .btn-shape:hover {
+  transform: scale(1.1);
   box-shadow: #4F00E4 0 1px 30px !important;
 }
 .rad-m {

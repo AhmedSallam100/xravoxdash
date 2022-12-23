@@ -16,16 +16,8 @@
 </head>
 
 <body class="dark-theme">
-  <div class="container-7">
-    <section>
-      <div class="loader loader-1">
-        <div class="loader-outter"></div>
-        <div class="loader-inner"></div>
-      </div>
-    </section>
-  </div>
   <!-- End Loader -->
-  <div class="page fb-11 d-flex">
+  <div class="page d-flex">
     <!-- Start Loader -->
     <!-- <div class="background form">
       <div class="shape"></div>
@@ -58,20 +50,18 @@
       </div>
     </div> -->
     <nav class="sidebar closes">
-      <div>
-        <i class="uil uil-x close-side"></i>
-        <header>
-          <div class="image-text">
-            <span class="image">
-              <img class="img-p" src="img/wbsite-logo.png" alt="">
-            </span>
-            <div class="text header-text">
-              <span class="name">Ravox</span>
-              <span class="prof">Front-End</span>
-            </div>
+      <i class="uil uil-x close-side"></i>
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img class="img-p" src="img/wbsite-logo.png" alt="">
+          </span>
+          <div class="text header-text">
+            <span class="name">Ravox</span>
+            <span class="prof">Front-End</span>
           </div>
-        </header>
-      </div>
+        </div>
+      </header>
       <div class="menu-bar">
         <div class="menu">
           
@@ -141,144 +131,151 @@
       <div class="head bg-white p-15 between-flex">
         <img class="img-p open-side" src="img/hum-menu.png" alt="">
         <div class="search p-relative">
-          <input class="p-10 rad-10" type="search" placeholder="Type A Keyword">
+          <input class="p-10 rad-10" onkeyup="search(this.value)" type="search" placeholder="Type A Keyword">
         </div>
         <div class="icons d-flex align-center">
           <span class="notification d-flex align-center">
             <i class="uil uil-moon change-theme " id="theme-button"></i>
-            <!-- <img src="img/manimg.jpg" class="c-pointer" alt="" onclick="toggleMenu()"> -->
           </span>
         </div>
-        <!-- Start Drop Menu -->
-        <!-- <img class="img-p logo-web" src="img/ravox.png" alt=""> -->
         <img class="img-p logo-web" alt="">
         <img class="img-p" src="img/wbsite-logo.png" alt="">
-        <!-- <div class="sub-menu-wrap" id="subMenu">
-          <div class="sub-menu">
-            <div class="user-info">
-              <h2>Ahmed Sallam</h2>
-            </div>
-            <hr>
-            <a class="sub-menu-link ff" href="#profile">
-              <i class="uil uil-user"></i>
-              <p>Profile</p>
-              <span>></span>
-            </a>
-            <a class="sub-menu-link ff" href="#settings">
-              <i class="uil uil-setting"></i>
-              <p>Settings</p>
-              <span>></span>
-            </a>
-            <a class="sub-menu-link ff" href="index-fb.html">
-              <i class="uil uil-envelope-question"></i>
-              <p>Feedback</p>
-              <span>></span>
-            </a>
-            <a class="sub-menu-link ff m-js" href="#">
-              <i class="uil uil-signout"></i>
-              <p>Log Out</p>
-              <span>></span>
-            </a>
-          </div>
-        </div> -->
       </div>
       <!-- End Head -->
-      <h1 class="p-relative my-stl fd-3">الصفحة الرئيسية</h1>
+      <h1 style="width: 133px;" class="p-relative my-stl fd-2">الاضافات</h1>
       <div class="wrapper d-grid gap-20">
-        <div class="wb-1 cs-wb p-relative bg-white p-10 rad-10">
+        <!-- Start Box One -->
+        <div class="wb-1 p-relative bg-white p-10 rad-10 ">
           <div class="circle">1</div>
-          <div class="text-2">
-            <i class="uil uil-window icon-2"></i>
-            <div class="stl-txt">
-              المواقع
-            </div>
-          </div>
+          <img src="img/wappalyzer.svg" class="wb-1-img wb-3 wb-4 wb-5 wb-6 wb-7 wb-8 wb-9" alt="" style="background-color: white;">
           <div class="text">
-            <p>هنا ستجد اغلب المواقع التي ستحتاج</p>
-            <p><span class="mspn">اليها كمبرمج خلال رحلتك التعليمية</span></p>
-            <p class="mt-0">باذن الله</p>
+            <p>هذه الاضافة اكثر من رائعة فكرتها بكل بساطة تخبرك ب اللغات والتقنيات</p>
+            <p><span class="mspn-f"> المستخدمة لعمل الموقع الذي تتواجد فيه</span></p>
+            <p class="mt-0">ستحتاجها باذن الله</p>
           </div>
-          <a href="index-web.html" target="_blank" class="btn-shape my-a">Go<i
+          <a href="https://chrome.google.com/webstore/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg/related?hl=ru" target="_blank" class="btn-shape my-a">Go<i
               class="uil uil-angle-right-b my-i"></i></a>
         </div>
-        <div class="wb-1 cs-wb p-relative bg-white p-10 rad-10">
+        <div class="wb-1 p-relative bg-white p-10 rad-10 ">
           <div class="circle">2</div>
-          <div class="text-2">
-            <i class="uil uil-arrow-growth icon-2"></i>
-            <div class="stl-txt">
-              المسارات التعليمية
-            </div>
-          </div>
+          <img src="img/Fox Clocks.png" class="wb-1-img wb-3 wb-4 wb-5 wb-6 wb-7 wb-8" alt="" style="background-color: white;">
           <div class="text">
-            <p>هنا ستجد المسارات التعليمية</p>
-            <p><span class="mspn">الخاصة بمجال الويب انتظر باقي المجالات</span></p>
-            <p class="mt-0">باذن الله</p>
+            <p>هذه الاضافة عبارة عن ساعة دولية يمكنك من خلالها</p>
+            <p><span class="mspn-f">معرفة الساعة الحالية في اي دولة</span></p>
+            <p class="mt-0">ستحتاجها باذن الله</p>
           </div>
-          <a href="index-e.html" target="_blank" class="btn-shape my-a">Go<i
+          <a href="https://chrome.google.com/webstore/detail/foxclocks/obcbigljfpgappaaofailjjoabiikckk" target="_blank" class="btn-shape my-a">Go<i
               class="uil uil-angle-right-b my-i"></i></a>
         </div>
-        <div class="wb-1 cs-wb p-relative bg-white p-10 rad-10">
+        <div class="wb-1 p-relative bg-white p-10 rad-10 ">
           <div class="circle">3</div>
-          <div class="text-2">
-            <i class="uil uil-notebooks icon-2"></i>
-            <div class="stl-txt">
-              الكتب
-            </div>
-          </div>
+          <img src="img/Grepper.jpg" class="wb-1-img wb-3 wb-4 wb-5 wb-6 wb-7 wb-8" alt="" style="background-color: white;">
           <div class="text">
-            <p>هنا ستجد العديد من الكتب التي ستحتاج</p>
-            <p><span class="mspn">اليها كمبرمج خلال رحلتك التعليمية</span></p>
-            <p class="mt-0">باذن الله</p>
+            <p>هذه الاضافة ستساعدك اذا كنت تبحث عن كود او خطا في</p>
+            <p><span class="mspn-f">الكود ستظهر لك في محرك البحث اكواد وحلول عديدة</span></p>
+            <p class="mt-0">ستحتاجها باذن الله</p>
           </div>
-          <a href="index-e.html" target="_blank" class="btn-shape my-a">Go<i
+          <a href="https://chrome.google.com/webstore/detail/grepper/amaaokahonnfjjemodnpmeenfpnnbkco" target="_blank" class="btn-shape my-a">Go<i
               class="uil uil-angle-right-b my-i"></i></a>
         </div>
-        <div class="wb-1 cs-wb p-relative bg-white p-10 rad-10">
+        <div class="wb-1 p-relative bg-white p-10 rad-10 ">
           <div class="circle">4</div>
-          <div class="text-2">
-            <i class="uil uil-file-info-alt icon-2"></i>
-            <div class="stl-txt">
-              المقالات
-            </div>
-          </div>
+          <img src="img/LoremGenerator.jpg" class="wb-1-img wb-3 wb-4 wb-5 wb-6 wb-7 wb-8" alt="" style="background-color: white;">
           <div class="text">
-            <p>هنا ستجد العديد من المقالات في مختلف </p>
-            <p><span class="mspn">المجالات مثل التسويق | البرمجة | الديزاين</span></p>
-            <p class="mt-0">ستستفيد باذن الله</p>
+            <p>هذه الاضافة ستساعدك اذا كنت تريد توليد كلمات عشوائية</p>
+            <p><span class="mspn-f">لكي تستخدمها في موقعك مثل (Lorem)</span></p>
+            <p class="mt-0">ستحتاجها باذن الله</p>
           </div>
-          <a href="index-ar.html" target="_blank" class="btn-shape my-a">Go<i
+          <a href="https://chrome.google.com/webstore/detail/lorem-ipsum-generator-usi/ogkidppcbldhebgplkdmepodkbfanndi" target="_blank" class="btn-shape my-a">Go<i
               class="uil uil-angle-right-b my-i"></i></a>
         </div>
-        <div class="wb-1 cs-wb p-relative bg-white p-10 rad-10">
+        <div class="wb-1 p-relative bg-white p-10 rad-10 ">
           <div class="circle">5</div>
-          <div class="text-2">
-            <i class="uil uil-text-fields icon-2"></i>
-            <div class="stl-txt">
-              النصائح
-            </div>
-          </div>
+          <img src="img/WebDeveloper.jpg" class="wb-1-img wb-3 wb-4 wb-5 wb-6 wb-7 wb-8" alt="" style="background-color: white;">
           <div class="text">
-            <p>هنا ستجد العديد من النصائح التي ستفيدك </p>
-            <p><span class="mspn">خلال رحلتك التعليمية  </span></p>
-            <p class="mt-0"> باذن الله</p>
+            <p>هذه الاضافة تقدم لك مجموعة من المميزات مثل ابطال كود ال</p>
+            <p><span class="mspn-f">CSS JS Cookies Imgs وأشياء اخري</span></p>
+            <p class="mt-0">ستحتاجها باذن الله</p>
           </div>
-          <a href="index-ar.html" target="_blank" class="btn-shape my-a">Go<i
+          <a href="https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm" target="_blank" class="btn-shape my-a">Go<i
               class="uil uil-angle-right-b my-i"></i></a>
         </div>
-        <div class="wb-1 cs-wb p-relative bg-white p-10 rad-10">
+        <div class="wb-1 p-relative bg-white p-10 rad-10 ">
           <div class="circle">6</div>
-          <div class="text-2">
-            <i class="uil uil-keyboard icon-2"></i>
-            <div class="stl-txt">
-              الاضافات
-            </div>
-          </div>
+          <img src="img/Webdeveloperchecklist.jpg" class="wb-1-img wb-3 wb-4 wb-5 wb-6 wb-7 wb-8" alt="" style="background-color: white;">
           <div class="text">
-            <p>هنا ستجد العديد من الاضافات التي يمكنك </p>
-            <p><span class="mspn">تنزيلها في متصفحك لتساعدك</span></p>
-            <p class="mt-0"> باذن الله</p>
+            <p>هذه الاضافة تقوم بفحص الموقع الخاص بك مثل</p>
+            <p><span class="mspn-f">Responsive Seo Accessibilty وأشياء اخري</span></p>
+            <p class="mt-0">ستحتاجها باذن الله</p>
           </div>
-          <a href="index-ar.html" target="_blank" class="btn-shape my-a">Go<i
+          <a href="https://chrome.google.com/webstore/detail/web-developer-checklist/iahamcpedabephpcgkeikbclmaljebjp" target="_blank" class="btn-shape my-a">Go<i
+              class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10 ">
+          <div class="circle">7</div>
+          <img src="img/PageRuler.jpg" class="wb-1-img wb-3 wb-4 wb-5 wb-6 wb-7 wb-8" alt="" style="background-color: white;">
+          <div class="text">
+            <p>هذه الاضافة تقوم بجعلك تحديد مقاس  اي صورة</p>
+            <p><span class="mspn-f">في اي موقع تريده عن طريق تحديد الصورة المطلوبة</span></p>
+            <p class="mt-0">ستحتاجها باذن الله</p>
+          </div>
+          <a href="https://chrome.google.com/webstore/detail/page-ruler/jcbmcnpepaddcedmjdcmhbekjhbfnlff" target="_blank" class="btn-shape my-a">Go<i
+              class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10 ">
+          <div class="circle">8</div>
+          <img src="img/GitHunt.jpg" class="wb-1-img wb-3 wb-4 wb-5 wb-6 wb-7 wb-8" alt="" style="background-color: white;">
+          <div class="text">
+            <p>هذه الاضافة تقوم باظهار لك التريندات التي تقوم بتحديدها</p>
+            <p><span class="mspn-f">عن طريق مشاريع ال جت هب</span></p>
+            <p class="mt-0">ستحتاجها باذن الله</p>
+          </div>
+          <a href="https://chrome.google.com/webstore/detail/githunt/khpcnaokfebphakjgdgpinmglconplhp" target="_blank" class="btn-shape my-a">Go<i
+              class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10 ">
+          <div class="circle">9</div>
+          <img src="img/ResponsiveViewer.jpg" class="wb-1-img wb-3 wb-4 wb-5 wb-6 wb-7 wb-8" alt="" style="background-color: white;">
+          <div class="text">
+            <p>هذه الاضافة اكثر من رائعة تمكنك من عرض موقعك علي اكثر من شاشة</p>
+            <p><span class="mspn-f">للتاكد من ان الموقع الخاص بك متجاوب مع جميع الشاشات</span></p>
+            <p class="mt-0">ستحتاجها باذن الله</p>
+          </div>
+          <a href="https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb" target="_blank" class="btn-shape my-a">Go<i
+              class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <!-- <div class="web-shape">Visual Extension</div> -->
+        <div class="wb-1 p-relative bg-white p-10 rad-10 ">
+          <div class="circle">10</div>
+          <img src="img/closeTag.png" class="wb-1-img wb-3 wb-4 wb-5 wb-6 wb-7 wb-8" alt="" style="border-radius: 6px;">
+          <div class="text">
+            <p>هذه الاضافة اكثر من رائعة تقوم بغلق التاج التي تكتبه</p>
+            <p><span class="mspn-f">تلقائيا دون اي تدخل منك</span></p>
+            <p class="mt-0">(Visual Studio Code)</p>
+          </div>
+          <a href="#" target="_blank" class="btn-shape my-a">Go<i
+              class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10 ">
+          <div class="circle">11</div>
+          <img src="img/console.png" class="wb-1-img wb-3 wb-4 wb-5 wb-6 wb-7 wb-8" alt="" style="border-radius: 6px;">
+          <div class="text">
+            <p>هذه الاضافة اكثر من رائعة تقوم بعرض النتائج التي تظهر</p>
+            <p><span class="mspn-f">في الكونسل داخل برنامج ال Vs Code نفسه</span></p>
+            <p class="mt-0">(Visual Studio Code)</p>
+          </div>
+          <a href="#" target="_blank" class="btn-shape my-a">Go<i
+              class="uil uil-angle-right-b my-i"></i></a>
+        </div>
+        <div class="wb-1 p-relative bg-white p-10 rad-10 ">
+          <div class="circle">12</div>
+          <img src="img/codesnap.png" class="wb-1-img wb-3 wb-4 wb-5 wb-6 wb-7 wb-8" alt="" style="border-radius: 6px;">
+          <div class="text">
+            <p>هذه الاضافة اكثر من رائعة تقوم بعرض الكود الخاص بك</p>
+            <p><span class="mspn-f">علي هيئة صورة بشكل منسق وجذاب لمشاركته مع الاخرين</span></p>
+            <p class="mt-0">(Visual Studio Code)</p>
+          </div>
+          <a href="#" target="_blank" class="btn-shape my-a">Go<i
               class="uil uil-angle-right-b my-i"></i></a>
         </div>
       </div>

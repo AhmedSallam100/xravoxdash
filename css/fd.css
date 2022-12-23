@@ -249,7 +249,7 @@ form button {
 .bars{
   width: 70%;
   height: 4px;
-  background: #54a0ff;
+  background: var(--purple-color);
   border-radius: 10px;
 }
 
