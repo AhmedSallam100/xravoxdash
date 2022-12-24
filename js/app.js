@@ -112,7 +112,7 @@ setTimeout(() => {
   myPage.classList.remove("fb-11")
   myLoad.style.opacity = "0"
   myLoad.style.display = "none"
-}, 2500)
+}, 2000)
 
 // Search
 
@@ -127,7 +127,21 @@ setTimeout(() => {
 // }
 
 
+// let div = document.createElement("div")
+// content.appendChild(div)
+// div.classList.add("shape-pho")
 
+// let div2 = document.createElement("div")
+// content.appendChild(div2)
+// div2.classList.add("shape-pho-2")
+
+// let div3 = document.createElement("div")
+// content.appendChild(div3)
+// div3.classList.add("shape-pho-3")
+
+// let div4 = document.createElement("div")
+// content.appendChild(div4)
+// div4.classList.add("shape-pho-4")
 
 
 

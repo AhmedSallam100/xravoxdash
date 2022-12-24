@@ -12,7 +12,7 @@ function sendEmail() {
   };
 
   emailjs
-  .send("service_z2tkmh6", "template_bkvy2ls", params)
+  .send("service_kzlzlxh", "template_gwmscep", params)
   .then(function () {
   });
 }
