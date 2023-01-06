@@ -1445,18 +1445,18 @@ box-shadow: none;
 }
 @keyframes new-blink {
   from {
-    border-right-color: var(--ani-color);
+    border-left-color: var(--ani-color);
   }
   to {
-    border-right-color: transparent;
+    border-left-color: transparent;
   }
 }
 @keyframes blink {
   from {
-    border-right-color: var(--ani-color);
+    border-left-color: var(--ani-color);
   }
   to {
-    border-right-color: transparent;
+    border-left-color: transparent;
   }
 }
 @keyframes new-typing-2 {
@@ -1472,10 +1472,10 @@ box-shadow: none;
 }
 @keyframes new-blink-2 {
   from {
-    border-right-color: var(--ani-color);
+    border-left-color: var(--ani-color);
   }
   to {
-    border-right-color: transparent;
+    border-left-color: transparent;
   }
 }
 @keyframes new-typing-3 {
@@ -1491,10 +1491,10 @@ box-shadow: none;
 }
 @keyframes new-blink-3 {
   from {
-    border-right-color: var(--ani-color);
+    border-left-color: var(--ani-color);
   }
   to {
-    border-right-color: transparent;
+    border-left-color: transparent;
   }
 }
 @keyframes new-typing-4 {
@@ -1510,10 +1510,10 @@ box-shadow: none;
 }
 @keyframes new-blink-4 {
   from {
-    border-right-color: var(--ani-color);
+    border-left-color: var(--ani-color);
   }
   to {
-    border-right-color: transparent;
+    border-left-color: transparent;
   }
 }
 @-webkit-keyframes vibrate-1 {
@@ -1686,25 +1686,20 @@ section {
   transform: translate(-50%, -50%);
   z-index: 99999999;
 }
-
 @media only screen and (max-width: 600px) {
   section {
   min-width: 350px;
   }
 }
-
 .loader {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin: 75px;
-    display: inline-block;
-    vertical-align: middle;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 75px;
+  display: inline-block;
+  vertical-align: middle;
 }
-
-/*LOADER-6*/
-
 .loader-1 .loader-outter {
   position: absolute;
   border: 9px solid var(--purple-color);
@@ -1717,7 +1712,6 @@ section {
   -webkit-animation: loader-1-outter 1s cubic-bezier(.42, .61, .58, .41) infinite;
   animation: loader-1-outter 1s cubic-bezier(.42, .61, .58, .41) infinite;
 }
-
 .loader-1 .loader-inner {
   position: absolute;
   border: 9px solid var(--purple-color-alt);

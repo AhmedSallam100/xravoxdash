@@ -20,12 +20,14 @@ let body = document.querySelector("body"),
 closeIcon.addEventListener("click", () => {
   sidebar.classList.add("closes")
   content.classList.remove("ml-250")
+  content.style.opacity = "1"
   closeIcon.style.display = "none"
   openIcon.style.display = "flex"
 })
 openIcon.addEventListener("click", () => {
   sidebar.classList.remove("closes")
   content.classList.add("ml-250")
+  content.style.opacity = "0.3"
   openIcon.style.display = "none"
   closeIcon.style.display = "flex"
 })
